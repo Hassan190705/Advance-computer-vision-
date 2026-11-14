@@ -1,0 +1,86 @@
+{
+  "baseline": {
+    "checkpoint": "experiments/baseline_seed42_res96x128_bc16/best_model.pth",
+    "mechanism": "baseline",
+    "base_channels": 16,
+    "resolution": "96x128",
+    "parameters": 541003,
+    "mIoU": 0.3060166447128455,
+    "pixel_accuracy": 0.7599748773198793,
+    "latency": {
+      "warmup_runs": 30,
+      "timed_runs": 100,
+      "mean_latency_ms": 63.29,
+      "std_latency_ms": 56.91,
+      "min_latency_ms": 50.44,
+      "max_latency_ms": 617.52,
+      "throughput_fps": 15.8,
+      "device": "cpu",
+      "threads": 2,
+      "batch_size": 1,
+      "resolution": "96x128"
+    },
+    "per_class_iou": {
+      "Sky": 0.8762286636076303,
+      "Building": 0.6636924293854064,
+      "Pole": 0.0072846476051721,
+      "Road": 0.7646178076368548,
+      "Pavement": 0.20820789966676598,
+      "Tree": 0.4401050650301699,
+      "SignSymbol": 0.0,
+      "Fence": 0.0,
+      "Car": 0.4060465789093013,
+      "Pedestrian": 0.0,
+      "Bicyclist": 0.0
+    }
+  },
+  "dilated_variant": {
+    "checkpoint": "experiments/dilated_bottleneck_seed42_res96x128_bc16/best_model.pth",
+    "mechanism": "dilated_bottleneck",
+    "base_channels": 16,
+    "resolution": "96x128",
+    "parameters": 541003,
+    "mIoU": 0.2948857920958705,
+    "pixel_accuracy": 0.7440320012670316,
+    "latency": {
+      "warmup_runs": 30,
+      "timed_runs": 100,
+      "mean_latency_ms": 71.88,
+      "std_latency_ms": 45.84,
+      "min_latency_ms": 40.65,
+      "max_latency_ms": 321.09,
+      "throughput_fps": 13.9,
+      "device": "cpu",
+      "threads": 2,
+      "batch_size": 1,
+      "resolution": "96x128"
+    },
+    "per_class_iou": {
+      "Sky": 0.8714691599965371,
+      "Building": 0.6225600186768006,
+      "Pole": 0.009726232604589565,
+      "Road": 0.7459255516110951,
+      "Pavement": 0.20024731661473016,
+      "Tree": 0.36574565938179615,
+      "SignSymbol": 0.0,
+      "Fence": 0.0,
+      "Car": 0.4280697741690268,
+      "Pedestrian": 0.0,
+      "Bicyclist": 0.0
+    }
+  },
+  "visualizations": {
+    "comparison_image": "visualizations\\comparative_predictions.png",
+    "failure_image": "visualizations\\failure_case_analysis.png",
+    "worst_test_samples": [
+      "Seq05VD_f03360.png",
+      "0001TP_010290.png"
+    ]
+  },
+  "delta": {
+    "mIoU": -0.011130852616974996,
+    "pixel_accuracy": -0.01594287605284772,
+    "latency_ms": 8.589999999999996,
+    "parameters": 0
+  }
+}

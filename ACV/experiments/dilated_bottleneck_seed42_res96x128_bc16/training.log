@@ -1,0 +1,32 @@
+======================================================================
+ASSIGNMENT B: REPRODUCIBLE SEGMENTATION TRAINING RUN
+======================================================================
+Experiment Name:    dilated_bottleneck_seed42_res96x128_bc16
+Mechanism:          dilated_bottleneck
+Base Channels:      16
+Random Seed:        42
+Input Resolution:   96 x 128
+Target Epochs:      5 (Early Stopping Patience: 4)
+Batch Size:         16
+Optimizer:          AdamW (lr=0.001, weight_decay=0.0001)
+Scheduler:          CosineAnnealingLR (T_max=5, eta_min=1e-5)
+Loss Function:      CrossEntropyLoss (ignore_index=255)
+Compute Device:     cpu
+======================================================================
+Data Splits: Train=367, Val=101, Test=233
+Total Parameters:      541,003
+Trainable Parameters:  541,003
+----------------------------------------------------------------------
+Epoch [01/05] Train Loss: 1.8976 | Val Loss: 1.9657 | Val mIoU: 15.39% | Val Acc: 50.49% | LR: 0.001000 | Time: 63.5s
+  >>> Best model saved (mIoU: 15.39%)
+Epoch [02/05] Train Loss: 1.5411 | Val Loss: 1.6341 | Val mIoU: 23.24% | Val Acc: 64.65% | LR: 0.000905 | Time: 62.7s
+  >>> Best model saved (mIoU: 23.24%)
+Epoch [03/05] Train Loss: 1.3375 | Val Loss: 1.3891 | Val mIoU: 31.52% | Val Acc: 73.19% | LR: 0.000658 | Time: 68.2s
+  >>> Best model saved (mIoU: 31.52%)
+Epoch [04/05] Train Loss: 1.2095 | Val Loss: 1.3542 | Val mIoU: 32.00% | Val Acc: 74.95% | LR: 0.000352 | Time: 64.2s
+  >>> Best model saved (mIoU: 32.00%)
+Epoch [05/05] Train Loss: 1.1498 | Val Loss: 1.2979 | Val mIoU: 30.76% | Val Acc: 73.64% | LR: 0.000105 | Time: 67.0s
+======================================================================
+TRAINING COMPLETE in 325.7s (5.43 mins)
+Best Validation mIoU: 32.00% at Epoch 4
+======================================================================

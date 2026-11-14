@@ -1,0 +1,25 @@
+======================================================================
+ASSIGNMENT B: REPRODUCIBLE SEGMENTATION TRAINING RUN
+======================================================================
+Experiment Name:    baseline_seed42_res192x256_bc16
+Mechanism:          baseline
+Base Channels:      16
+Random Seed:        42
+Input Resolution:   192 x 256
+Target Epochs:      1 (Early Stopping Patience: 4)
+Batch Size:         8
+Optimizer:          AdamW (lr=0.001, weight_decay=0.0001)
+Scheduler:          CosineAnnealingLR (T_max=1, eta_min=1e-5)
+Loss Function:      CrossEntropyLoss (ignore_index=255)
+Compute Device:     cpu
+======================================================================
+Data Splits: Train=367, Val=101, Test=233
+Total Parameters:      1,083,691
+Trainable Parameters:  1,083,691
+----------------------------------------------------------------------
+Epoch [01/01] Train Loss: 1.6360 | Val Loss: 1.4534 | Val mIoU: 24.53% | Val Acc: 67.12% | LR: 0.001000 | Time: 428.2s
+  >>> Best model saved (mIoU: 24.53%)
+======================================================================
+TRAINING COMPLETE in 428.3s (7.14 mins)
+Best Validation mIoU: 24.53% at Epoch 1
+======================================================================

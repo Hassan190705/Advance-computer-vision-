@@ -1,0 +1,32 @@
+======================================================================
+ASSIGNMENT B: REPRODUCIBLE SEGMENTATION TRAINING RUN
+======================================================================
+Experiment Name:    baseline_seed42_res96x128_bc16
+Mechanism:          baseline
+Base Channels:      16
+Random Seed:        42
+Input Resolution:   96 x 128
+Target Epochs:      5 (Early Stopping Patience: 4)
+Batch Size:         16
+Optimizer:          AdamW (lr=0.001, weight_decay=0.0001)
+Scheduler:          CosineAnnealingLR (T_max=5, eta_min=1e-5)
+Loss Function:      CrossEntropyLoss (ignore_index=255)
+Compute Device:     cpu
+======================================================================
+Data Splits: Train=367, Val=101, Test=233
+Total Parameters:      541,003
+Trainable Parameters:  541,003
+----------------------------------------------------------------------
+Epoch [01/05] Train Loss: 1.8999 | Val Loss: 1.9483 | Val mIoU: 16.09% | Val Acc: 57.26% | LR: 0.001000 | Time: 86.0s
+  >>> Best model saved (mIoU: 16.09%)
+Epoch [02/05] Train Loss: 1.5395 | Val Loss: 1.5755 | Val mIoU: 23.18% | Val Acc: 64.34% | LR: 0.000905 | Time: 72.1s
+  >>> Best model saved (mIoU: 23.18%)
+Epoch [03/05] Train Loss: 1.3307 | Val Loss: 1.3734 | Val mIoU: 35.55% | Val Acc: 80.20% | LR: 0.000658 | Time: 67.6s
+  >>> Best model saved (mIoU: 35.55%)
+Epoch [04/05] Train Loss: 1.2019 | Val Loss: 1.2646 | Val mIoU: 36.58% | Val Acc: 81.76% | LR: 0.000352 | Time: 69.7s
+  >>> Best model saved (mIoU: 36.58%)
+Epoch [05/05] Train Loss: 1.1452 | Val Loss: 1.1915 | Val mIoU: 35.55% | Val Acc: 81.50% | LR: 0.000105 | Time: 69.6s
+======================================================================
+TRAINING COMPLETE in 365.3s (6.09 mins)
+Best Validation mIoU: 36.58% at Epoch 4
+======================================================================

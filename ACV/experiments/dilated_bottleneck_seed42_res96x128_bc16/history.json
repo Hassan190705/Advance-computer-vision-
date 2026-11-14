@@ -1,0 +1,150 @@
+{
+  "config": {
+    "mechanism": "dilated_bottleneck",
+    "epochs": 5,
+    "batch_size": 16,
+    "lr": 0.001,
+    "weight_decay": 0.0001,
+    "base_channels": 16,
+    "seed": 42,
+    "resolution": [
+      96,
+      128
+    ],
+    "data_dir": "data/CamVid",
+    "save_dir": "experiments",
+    "patience": 4
+  },
+  "summary": {
+    "mechanism": "dilated_bottleneck",
+    "total_parameters": 541003,
+    "trainable_parameters": 541003,
+    "input_shape": [
+      1,
+      3,
+      96,
+      128
+    ],
+    "output_shape": [
+      1,
+      11,
+      96,
+      128
+    ]
+  },
+  "best_epoch": 4,
+  "best_val_miou": 0.3199575289463909,
+  "total_training_time_s": 325.7322108745575,
+  "epochs": [
+    {
+      "epoch": 1,
+      "train_loss": 1.8976232804134692,
+      "val_loss": 1.9656896355128524,
+      "val_miou": 0.1539341776459003,
+      "val_acc": 0.5048840148930485,
+      "lr": 0.001,
+      "duration_s": 63.475772857666016,
+      "per_class_val_iou": {
+        "Sky": 0.6881474278051933,
+        "Building": 0.3549637779822435,
+        "Pole": 0.001568627450980392,
+        "Road": 0.5507117584135605,
+        "Pavement": 0.0,
+        "Tree": 3.4460859847682996e-05,
+        "SignSymbol": 0.0,
+        "Fence": 0.0,
+        "Car": 0.09784990159307809,
+        "Pedestrian": 0.0,
+        "Bicyclist": 0.0
+      }
+    },
+    {
+      "epoch": 2,
+      "train_loss": 1.5411268748769318,
+      "val_loss": 1.6340653436018688,
+      "val_miou": 0.23239607843053786,
+      "val_acc": 0.6464737215734431,
+      "lr": 0.000905463412215599,
+      "duration_s": 62.7045955657959,
+      "per_class_val_iou": {
+        "Sky": 0.9012212471426972,
+        "Building": 0.4841947247006086,
+        "Pole": 0.0061202448097923915,
+        "Road": 0.7964466595138384,
+        "Pavement": 0.14594137136271967,
+        "Tree": 0.0,
+        "SignSymbol": 0.0,
+        "Fence": 0.0,
+        "Car": 0.22243261520626026,
+        "Pedestrian": 0.0,
+        "Bicyclist": 0.0
+      }
+    },
+    {
+      "epoch": 3,
+      "train_loss": 1.3374795887710613,
+      "val_loss": 1.3890647510490794,
+      "val_miou": 0.3152267990096492,
+      "val_acc": 0.7318521712471042,
+      "lr": 0.000657963412215599,
+      "duration_s": 68.15409827232361,
+      "per_class_val_iou": {
+        "Sky": 0.900967739370373,
+        "Building": 0.5698972394971479,
+        "Pole": 0.007866084704302365,
+        "Road": 0.856923625892387,
+        "Pavement": 0.4178209064815433,
+        "Tree": 0.2942142125890147,
+        "SignSymbol": 0.0,
+        "Fence": 0.0,
+        "Car": 0.4198049805713727,
+        "Pedestrian": 0.0,
+        "Bicyclist": 0.0
+      }
+    },
+    {
+      "epoch": 4,
+      "train_loss": 1.2094912879798327,
+      "val_loss": 1.3541576071540908,
+      "val_miou": 0.3199575289463909,
+      "val_acc": 0.7495143036548957,
+      "lr": 0.0003520365877844011,
+      "duration_s": 64.24569416046143,
+      "per_class_val_iou": {
+        "Sky": 0.9203599862675538,
+        "Building": 0.6047085933439956,
+        "Pole": 0.010748877864398772,
+        "Road": 0.8322633496768171,
+        "Pavement": 0.35189322771204656,
+        "Tree": 0.4447285835841789,
+        "SignSymbol": 0.0,
+        "Fence": 0.0,
+        "Car": 0.35483019996130916,
+        "Pedestrian": 0.0,
+        "Bicyclist": 0.0
+      }
+    },
+    {
+      "epoch": 5,
+      "train_loss": 1.149799991368598,
+      "val_loss": 1.29793384877762,
+      "val_miou": 0.3075629356191375,
+      "val_acc": 0.7364287833900867,
+      "lr": 0.00010453658778440106,
+      "duration_s": 66.99386501312256,
+      "per_class_val_iou": {
+        "Sky": 0.9180644845478576,
+        "Building": 0.5869687015054716,
+        "Pole": 0.009594447468698966,
+        "Road": 0.8192494273800435,
+        "Pavement": 0.31532410063099237,
+        "Tree": 0.40681937825234216,
+        "SignSymbol": 0.0,
+        "Fence": 0.0,
+        "Car": 0.3271717520251064,
+        "Pedestrian": 0.0,
+        "Bicyclist": 0.0
+      }
+    }
+  ]
+}

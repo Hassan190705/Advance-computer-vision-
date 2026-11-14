@@ -1,0 +1,62 @@
+{
+  "config": {
+    "mechanism": "baseline",
+    "epochs": 1,
+    "batch_size": 8,
+    "lr": 0.001,
+    "weight_decay": 0.0001,
+    "base_channels": 16,
+    "seed": 42,
+    "resolution": [
+      192,
+      256
+    ],
+    "data_dir": "data/CamVid",
+    "save_dir": "experiments",
+    "patience": 4
+  },
+  "summary": {
+    "mechanism": "baseline",
+    "total_parameters": 1083691,
+    "trainable_parameters": 1083691,
+    "input_shape": [
+      1,
+      3,
+      192,
+      256
+    ],
+    "output_shape": [
+      1,
+      11,
+      192,
+      256
+    ]
+  },
+  "best_epoch": 1,
+  "best_val_miou": 0.24526723802418104,
+  "total_training_time_s": 428.26328706741333,
+  "epochs": [
+    {
+      "epoch": 1,
+      "train_loss": 1.6359536069615335,
+      "val_loss": 1.4533882353565482,
+      "val_miou": 0.24526723802418104,
+      "val_acc": 0.6712213382672136,
+      "lr": 0.001,
+      "duration_s": 428.16360306739807,
+      "per_class_val_iou": {
+        "Sky": 0.784440622113144,
+        "Building": 0.5071482970512445,
+        "Pole": 0.0,
+        "Road": 0.7792215612060979,
+        "Pavement": 0.15199886776430627,
+        "Tree": 0.2825663783070044,
+        "SignSymbol": 0.0,
+        "Fence": 0.0,
+        "Car": 0.19256389182419476,
+        "Pedestrian": 0.0,
+        "Bicyclist": 0.0
+      }
+    }
+  ]
+}

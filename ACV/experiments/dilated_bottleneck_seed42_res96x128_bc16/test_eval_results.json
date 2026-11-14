@@ -1,0 +1,35 @@
+{
+  "checkpoint": "experiments/dilated_bottleneck_seed42_res96x128_bc16/best_model.pth",
+  "mechanism": "dilated_bottleneck",
+  "base_channels": 16,
+  "resolution": "96x128",
+  "parameters": 541003,
+  "mIoU": 0.2948857920958705,
+  "pixel_accuracy": 0.7440320012670316,
+  "latency": {
+    "warmup_runs": 30,
+    "timed_runs": 100,
+    "mean_latency_ms": 71.88,
+    "std_latency_ms": 45.84,
+    "min_latency_ms": 40.65,
+    "max_latency_ms": 321.09,
+    "throughput_fps": 13.9,
+    "device": "cpu",
+    "threads": 2,
+    "batch_size": 1,
+    "resolution": "96x128"
+  },
+  "per_class_iou": {
+    "Sky": 0.8714691599965371,
+    "Building": 0.6225600186768006,
+    "Pole": 0.009726232604589565,
+    "Road": 0.7459255516110951,
+    "Pavement": 0.20024731661473016,
+    "Tree": 0.36574565938179615,
+    "SignSymbol": 0.0,
+    "Fence": 0.0,
+    "Car": 0.4280697741690268,
+    "Pedestrian": 0.0,
+    "Bicyclist": 0.0
+  }
+}
